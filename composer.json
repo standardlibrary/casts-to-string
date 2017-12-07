@@ -1,0 +1,38 @@
+{
+  "name": "standardlibrary/cast-to-string",
+  "description": "Reuseable interface for describing PHP objects that can be cast to a string",
+  "type": "library",
+  "keywords": ["php", "string", "casts"],
+  "homepage": "https://github.com/standardlibrary",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Simon Deeley",
+      "email": "simondeeley@users.noreply.github.com",
+      "homepage": "https://github.com/simondeeley",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/standardlibrary/casts-to-string/issues",
+    "source": "https://github.com/standardlibrary/casts-to-string",
+    "docs": "https://github.com/standardlibrary/casts-to-string/blob/master/README.md"
+  },
+  "require": {
+    "php": "~7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "StandardLibrary\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+   "extra": {
+       "branch-alias": {
+           "dev-master": "1.0-dev"
+       }
+   },
+   "replace": {
+     "simondeeley/cast-to-string": "*"
+   }
+}
