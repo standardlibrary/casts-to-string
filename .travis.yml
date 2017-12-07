@@ -25,7 +25,7 @@ matrix:
       env: dependencies=lowest
     - php: nightly
       env: dependencies=highest
-    fast_finish: true
+  fast_finish: true
 
 before_script:
   - if [ -z "$dependencies" ]; then composer install --no-interaction --prefer-dist; fi;
