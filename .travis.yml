@@ -28,9 +28,9 @@ matrix:
   fast_finish: true
 
 before_script:
-  - if [ -z "$dependencies" ]; then composer install --no-interaction --prefer-dist --prefer-stable; fi;
+  - if [ -z "$dependencies" ]; then composer install --no-interaction --prefer-dist; fi;
   - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest --no-interaction --prefer-dist; fi;
-  - if [ "$dependencies" = "highest" ]; then composer update --no-interaction --prefer-dist; fi;
+  - if [ "$dependencies" = "highest" ]; then composer update --no-interaction; fi;
 
 after_script:
   - if [ "$TRAVIS_PHP_VERSION" != "nightly" ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
