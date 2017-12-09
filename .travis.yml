@@ -28,7 +28,7 @@ matrix:
   fast_finish: true
 
 before_script:
-  - if [ -z "$dependencies" ]; then composer install --no-interaction --prefer-dist; fi;
+  - if [ -z "$dependencies" ]; then composer install --no-interaction --prefer-dist --prefer-stable; fi;
   - if [ "$dependencies" = "lowest" ]; then composer update --prefer-lowest --no-interaction --prefer-dist; fi;
   - if [ "$dependencies" = "highest" ]; then composer update --no-interaction --prefer-dist; fi;
 
