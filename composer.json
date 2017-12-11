@@ -1,5 +1,5 @@
 {
-  "name": "standardlibrary/cast-to-string",
+  "name": "standardlibrary/casts-to-string",
   "description": "Reuseable interface for describing PHP objects that can be cast to a string",
   "type": "library",
   "keywords": ["php", "string", "casts"],
