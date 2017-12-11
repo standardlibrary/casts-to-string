@@ -8,7 +8,6 @@ declare(strict_types=1);
  * @copyright Simon Deeley 2017
  */
 
-use ReflectionClass;
 use PHPUnit\Framework\TestCase;
 use StandardLibrary\Contracts\CastsToString;
 
